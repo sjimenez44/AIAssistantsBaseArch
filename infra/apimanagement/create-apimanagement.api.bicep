@@ -30,7 +30,7 @@ resource apiManagementApiVersionSets 'Microsoft.ApiManagement/service/apiVersion
   }
 }
 
-resource service_apim_dev_shared_02_name_aoai_v0 'Microsoft.ApiManagement/service/apis@2024-06-01-preview' = {
+resource apiManagementAPI 'Microsoft.ApiManagement/service/apis@2024-06-01-preview' = {
   parent: apiManagement
   name: apiManagementApiName
   properties: {
