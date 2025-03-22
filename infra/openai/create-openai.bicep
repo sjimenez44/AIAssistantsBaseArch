@@ -17,6 +17,7 @@ resource openai 'Microsoft.CognitiveServices/accounts@2024-10-01' = {
   properties: {
     apiProperties: {}
     customSubDomainName: openaiName
+    disableLocalAuth: true
     networkAcls: {
       defaultAction: 'Allow'
       virtualNetworkRules: []
